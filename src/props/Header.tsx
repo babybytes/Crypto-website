@@ -9,7 +9,7 @@ const Header = () => {
   
 
     return(
-    <div className=" bg-transparent w-full overflow-hidden font-Prompt py-5 duration-500  z-50 "> 
+    <div className="fixed bg-transparent w-full overflow-hidden font-Prompt py-5 duration-500  z-50 "> 
         <div className='flex justify-between'>
             <div className='mt-1 ml-10 flex'>
                 <img src="https://cdn.discordapp.com/attachments/941091409509896283/944703462732611604/Component_2.svg" alt="" className='-mt-3' />
