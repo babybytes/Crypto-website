@@ -6,7 +6,9 @@ module.exports = {
       colors: {
         'pinky': '#C517F1',
         'cynku' : '#5AFFFF',
-        'pinku': '#E91ED5'
+        'pinku': '#E91ED5',
+        'bbg'  : '#333333',
+        'bbs'  : '#F6F6F6',
       },
       fontFamily: {
         Prompt: ['Prompt', 'sans-serif'],
