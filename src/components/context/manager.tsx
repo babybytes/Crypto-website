@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import CustomCursorContext, {
   CursorLookType,
 } from "../context/CustomCursorContext";
 
-const CustomCursorManager = ({ children }) => {
+interface Props {
+  // any props that come into the component
+}
+
+const CustomCursorManager : FC< Props> = ({ children}) => {
   const [type, setType] = useState<CursorLookType>("default");
 
   return (
