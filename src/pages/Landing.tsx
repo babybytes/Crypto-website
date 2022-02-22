@@ -9,7 +9,7 @@ const Landing = () => {
   return (
 
   
-    <div className="   font-Prompt bg-white mt-10 dark:bg-black transition-all duration-500  ease-in-out">
+    <div className="   font-Prompt bg-white -mt-7 pt-16 dark:bg-black transition-all duration-500  ease-in-out">
 
         <main className=" flex flex-col w-full h-full pt-32 duration-500 ease-in-out">
             <div className="flex flex-row ">
@@ -175,6 +175,13 @@ const Landing = () => {
                         <span className="mt-5 dark:text-white duration-500 ease-in-out">Full Stack Developer</span>
                         <p className=" w-[60%] text-center dark:text-white duration-500 ease-in-out">Has an experience of 10+ years working in web.3. Previously @crypto.com </p>
                     </div>
+                </div>
+            </div>
+            <div className="mt-[10rem] mb-[18rem] flex justify-center">
+                <div className="flex flex-col justify-center w-[75%] h-[250px] place-items-center bg-gradient-to-r from-pinku via-pinky to-cynku rounded-3xl">
+                    <span className=" text-6xl text-white font-bold">Looking To build On</span>
+                    <span className="pt-5 text-6xl text-white font-bold">Key?</span>
+                    <button className='mt-10 text-lg font-bold text-white w-40 h-10 bg-white rounded-3xl'><span className="text-lg font-bold bg-clip-text text-transparent w-40 h-10 bg-gradient-to-r from-pinku via-pinky to-cynku ">Join Discord</span>  </button>
                 </div>
             </div>
         </main>
