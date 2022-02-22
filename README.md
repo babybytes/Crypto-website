@@ -1,3 +1,3 @@
 # CRYPTO WEBSITE
 
-A Next.js, Tailwindcss, Typescript and Yarn based website
+A Next.js, Tailwindcss, Typescript, Sass and Yarn based website
