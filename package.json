@@ -9,12 +9,15 @@
     "compile": "tsc"
   },
   "dependencies": {
+    "@react-three/drei": "^8.10.6",
     "framer-motion": "latest",
     "gsap": "^3.9.1",
     "next": "12",
     "react": "latest",
     "react-dom": "latest",
-    "sass": "^1.49.8"
+    "react-three-fiber": "^6.0.13",
+    "sass": "^1.49.8",
+    "three": "^0.138.0"
   },
   "devDependencies": {
     "@types/node": "^16.11.6",

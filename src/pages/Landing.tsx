@@ -1,5 +1,8 @@
-import React from "react";
-
+import React, { Suspense } from "react"; 
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import Box from "../components/Box";
+import Box2 from "../components/Box2";
 
 const Landing = () => {
 
@@ -12,17 +15,39 @@ const Landing = () => {
     <div className=" w-full font-Prompt bg-white lg:-mt-7 lg:pt-16 dark:bg-black transition-all duration-500  ease-in-out">
 
         <main className=" flex flex-col w-full h-full pt-32 duration-500 ease-in-out">
+            
+
             <div className="flex flex-row ">
                 <div className="pl-[5%] md:w-[70%] flex flex-col">
-                    <span className=" text-black dark:text-white font-bold text-[2rem] lg:text-7xl duration-500 ease-in-out">A Decentralized  </span>
-                    <span className=" lg:pt-5 font-bold text-[2rem] lg:text-7xl text-transparent bg-gradient-to-r from-pinky ti bg-pinku via-cynku bg-clip-text decoration-transparent">Future</span>
+                    <span className=" text-black dark:text-white font-bold text-[1.8rem] lg:text-7xl duration-500 ease-in-out">A Decentralized  </span>
+                    <span className=" lg:pt-5 font-bold text-[1.8rem] lg:text-7xl text-transparent bg-gradient-to-r from-pinky ti bg-pinku via-cynku bg-clip-text decoration-transparent">Future</span>
                     <span className=" pt-5 w-[70%] md:w-[50%] text-black dark:text-white duration-500 ease-in-out">The Key is a trusted ecosystem that includes apps and services for a decentralized future. </span>
                     <button className='mt-5 text-lg font-bold text-white w-40 h-10 bg-gradient-to-r from-pinku via-pinky to-cynku rounded-3xl'> Explore </button>
                 </div>
-                <img src="https://cdn.discordapp.com/attachments/941091409509896283/944717611101466624/Rings.svg" className="hidden md:block -ml-4 w-[70%] md:w-[19%] duration-500 ease-in-out"/>
+                <div className="block lg:hidden w-[40%] -mt-8 -ml-8">
+                    <Canvas className="canvas">
+                        <OrbitControls enableZoom={false} />
+                        <ambientLight intensity={0.5} />
+                        <directionalLight position={[-2, 5, 2]} />
+                        <Suspense fallback={null}>
+                            <Box/>
+                        </Suspense>
+                    </Canvas>
+                </div>
+                <div className="lg:block hidden w-[50%] -ml-8">
+                    <Canvas className="canvas">
+                        <OrbitControls enableZoom={false} />
+                        <ambientLight intensity={0.5} />
+                        <directionalLight position={[-2, 5, 2]} />
+                        <Suspense fallback={null}>
+                            <Box2/>
+                        </Suspense>
+                    </Canvas>
+                </div>
+                {/* <img src="https://cdn.discordapp.com/attachments/941091409509896283/944717611101466624/Rings.svg" className="hidden md:block -ml-4 w-[70%] md:w-[19%] duration-500 ease-in-out"/>
                 <div className="block md:hidden">
                     <img src="https://cdn.discordapp.com/attachments/941091409509896283/944717611101466624/Rings.svg" className=" mt-[10rem] lg:mt-0 -ml-4 w-[70%] lg:w-[19%] duration-500 ease-in-out"/>
-                </div>
+                </div> */}
 {/*                 <img src="https://cdn.discordapp.com/attachments/941091409509896283/944719797311127602/Group_1.svg" className=" block dark:hidden w-[18%] duration-500 ease-in-out"/>
  */}        </div>
             <div className=" mt-10 ml-[5%] w-[90%] md:w-[40%]">
