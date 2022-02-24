@@ -13,7 +13,9 @@ export default function Home() {
         <title>Crypto COXY</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <CustomCursor/>
+      <div className=" hidden  lg:block">
+        <CustomCursor/>
+      </div>
       <Header/> 
       
       <Landing/>
